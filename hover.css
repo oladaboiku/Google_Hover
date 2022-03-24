@@ -47,6 +47,12 @@ div:hover {
     top: 60px;
     padding: 5px;
 }
+.hoverImg2Svg{
+    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 230px;
+}
 .hoverTxt{
     position: absolute;
     top: 90px;
