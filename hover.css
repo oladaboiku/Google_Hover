@@ -47,6 +47,9 @@ div:hover {
     top: 60px;
     padding: 5px;
 }
+svg{
+    color: #fff;
+}
 .hoverImg2Svg{
     color: #fff;
     position: absolute;
