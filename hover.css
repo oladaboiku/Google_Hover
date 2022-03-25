@@ -24,10 +24,10 @@ div:hover {
     position: relative;
     width: 80%;
 }
-.hoverWrapper:hover.hoverImg1{
-    opacity: 0.3;
+.hoverWrapper:hover .hoverImg1{
+    opacity: 0;
 }
-.hoverWrapper:hover.hoverImg2{
+.hoverWrapper:hover .hoverImg2{
     opacity: 1;
 }
 .hoverImg1{
@@ -37,7 +37,7 @@ div:hover {
   display: block;
   width: 100%;
   height: auto;
-  transition: .5s ease;
+  transition: 1s ease;
   backface-visibility: hidden;
 
 }
@@ -47,14 +47,19 @@ div:hover {
 .hoverImg2{
     /* position: absolute;
     top: 0; */
-    transition: .5s ease;
+    transition: 2s ease;
     opacity: 0;
     position: absolute;
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    text-align: center;
+    left: 30%;
+    -moz-transform: scale(1) translate(40px, 0px);
+-webkit-transform: scale(1) translate(40px, 0px);
+-o-transform: scale(1) translate(40px, 0px);
+-ms-transform: scale(1) translate(40px, 0px);
+transform: scale(1) translate(30px, 0px);
+    /* transform: translate(-50%, -50%); */
+    /* -ms-transform: translate(-50%, -50%); */
+    /* text-align: center; */
   
 }
 .hoverImg{
@@ -68,10 +73,10 @@ div:hover {
 /* .hoverSecondImg, 
 .hoverTxt,
 .hoverButton */
-.hoverImg2{
+/* .hoverImg2{
     display: none;  
     opacity: 1;
-}
+} */
 .hoverImg2Tx{
     color: #fff;
     position: absolute;
