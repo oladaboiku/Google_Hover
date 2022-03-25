@@ -24,9 +24,38 @@ div:hover {
     position: relative;
     width: 80%;
 }
+.hoverWrapper:hover.hoverImg1{
+    opacity: 0.3;
+}
+.hoverWrapper:hover.hoverImg2{
+    opacity: 1;
+}
+.hoverImg1{
+    /* display: block;
+    transition:2s ease-in-out; */
+    opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+
+}
+/* .hoverImg1:hover{
+    opacity: 1;
+} */
 .hoverImg2{
+    /* position: absolute;
+    top: 0; */
+    transition: .5s ease;
+    opacity: 0;
     position: absolute;
-    top: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  
 }
 .hoverImg{
     /* width: 100%; */
@@ -37,24 +66,18 @@ div:hover {
     border-radius: 20px;
 }
 /* .hoverSecondImg, 
-.hoverTxt{
+.hoverTxt,
+.hoverButton */
+.hoverImg2{
     display: none;  
-} */
+    opacity: 1;
+}
 .hoverImg2Tx{
     color: #fff;
     position: absolute;
     font-weight: 600;
     top: 60px;
     padding: 5px;
-}
-svg{
-    color: #fff;
-}
-.hoverImg2Svg{
-    color: #fff;
-    position: absolute;
-    top: 0;
-    left: 230px;
 }
 .hoverTxt{
     position: absolute;
@@ -66,4 +89,19 @@ svg{
     font-weight: 600;
     padding: 5px;
     width: 180px;
+}
+.hoverButton{
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 15px;
+    padding: 5px;
+}
+button{
+    border: none;
+    border-radius: 20px;
+    width: 92px;
+    padding: 3px;
+    background-color: #4B4F52;
+    color: #fff;
+    cursor: pointer ;
 }
